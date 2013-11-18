@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 3.2.1"
   s.add_dependency "pg"
   s.add_dependency "activerecord-postgres-hstore"
-  s.add_dependency "bootstrap-sass"
+  s.add_dependency "bootstrap-sass", '~> 2.0'
   s.add_dependency "bootstrap-wysihtml5-rails"
   s.add_dependency "select2-rails"
   s.add_dependency "haml-rails"
