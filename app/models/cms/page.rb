@@ -71,7 +71,8 @@ module Cms
     end
 
     def path_segments
-      return Array.new if self.parent.nil?
+      return [] if self.parent.nil? and self.pages.count > 0
+      return [self.slug] if self.parent.nil? and self.pages.count == 0
       _segments = self.parent.path_segments
       _segments << self.slug
       _segments
